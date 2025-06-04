@@ -1,1 +1,8 @@
-# Fraud_Detection_INT
+![image](https://github.com/user-attachments/assets/fefa81dd-51d3-420a-b787-b506ac031fb9)
+This project focuses on detecting fraudulent transactions using deep learning models, particularly a 1D Convolutional Neural Network (CNN). The dataset contains anonymized transaction features, and the model is trained to classify each transaction as either fraudulent or not. The input data is preprocessed and reshaped into a format suitable for sequence modeling, and the CNN architecture includes convolutional layers, dropout for regularization, and a final sigmoid layer for binary classification. Class imbalance is addressed by computing balanced class weights, and the model performance is evaluated using accuracy, classification report, and ROC AUC score.
+
+The key strength of the project lies in using deep learning to automatically extract patterns from transactional data, which may be difficult to identify through traditional rule-based systems. Additionally, comparisons with other models like LSTM and ANN provide a broader understanding of which architecture performs best for this binary classification task. The goal is to build a reliable and generalizable fraud detection model that can assist financial institutions in minimizing losses due to fraudulent activities.
+
+We can determine whether a transaction is fraudulent or not by using the trained deep learning model to predict a probability score between 0 and 1 for each transaction. If the predicted probability is greater than 0.5, the transaction is classified as fraudulent (label 1); if it is 0.5 or below, it is classified as not fraudulent (label 0). This decision is based on the model's learned patterns from historical data, where features of each transaction are analyzed to identify suspicious behavior. By applying this threshold-based logic, the model can automatically flag potentially fraudulent activities for further investigation.
+
+
